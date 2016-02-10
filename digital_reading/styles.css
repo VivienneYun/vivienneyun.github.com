@@ -1,0 +1,1346 @@
+body{
+    font-family: 'Lato', sans-serif;
+    background: #F9F9F9;
+}
+
+
+/*the nav*/
+
+div#Topbar{
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.48);
+    position: fixed;
+    height: 72px;
+    width: 100%;
+    background: #2B3E42;
+    z-index: 4;
+    transition: all 0.3 linear;
+}
+
+
+
+#Topbar .home{
+    display: block;
+    position: relative;
+    width: 10%;
+    margin: 2.3% auto;
+    transition: all .3s linear;
+}
+
+
+
+#Topbar .home img{
+    top: 50%;
+    margin: auto;
+    width: 100%;
+}
+
+#Topbar .home:hover{
+    opacity: 0.8;
+}
+ 
+#Topbar a.prev{
+    display: block;
+    width: 20%;
+    margin: 0 2%;
+    text-decoration: none;
+    color: #D1DBDA;
+    transition: all 0.2s linear;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    transition: all 0.3 linear;
+    
+}
+
+#Topbar a.prev:hover{
+    color: #F2583E;
+    margin-left: 1%;
+}
+
+#Topbar a.prev p{
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+    font-weight: 900;
+    line-height: 72px;
+    float: left;
+    text-decoration: none;
+    transition: all 0.3 linear;
+}
+
+
+#Topbar .prev .fa-arrow-circle-left{
+    line-height: 72px;
+    padding:0 5%;
+    float: left;
+    font-size: 1.5em;
+    transition: all 0.3 linear;
+}
+
+
+#Topbar a.next{
+    display: block;
+    width: 20%;
+    margin: 0 2%;
+    text-decoration: none;
+    color: #D1DBDA;
+    transition: all 0.2s linear;
+    position: relative;
+    float: right;
+    overflow: hidden;
+    
+}
+
+#Topbar a.next:hover{
+    color: #F2583E;
+    margin-right: 1%;
+}
+
+#Topbar a.next p{
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+    font-weight: 900;
+    line-height: 72px;
+    float: right;
+    text-decoration: none;
+    transition: all 0.3 linear;
+}
+
+
+#Topbar .next .fa-arrow-circle-right{
+    line-height: 72px;
+    padding:0 5%;
+    float: right;
+    font-size: 1.5em;
+    transition: font-size 0.3 linear;
+
+
+}
+
+
+/*the js effect*/
+
+div#Topbar.small{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+
+    height: 55px;
+    
+}
+
+#Topbar.small .home{
+   
+    margin: 1.5% auto;
+
+}
+
+#Topbar.small a.prev p{
+    font-size: 0.5em;
+
+
+    line-height: 55px;
+}
+
+#Topbar.small .prev .fa-arrow-circle-left{
+    line-height: 55px;
+    font-size: 1.2em;
+}
+
+#Topbar.small a.next p{
+    font-size: 0.5em;
+    line-height: 55px;
+}
+
+
+#Topbar.small .next .fa-arrow-circle-right{
+    line-height: 55px;
+    font-size: 1.2em;
+
+
+}
+
+
+
+/*the header*/
+
+div.container{
+    padding-top: 60px;
+    margin: 0 auto;
+    background: #F9F9F9;
+    width: 90%;
+    height: auto;
+}
+
+div.header{
+    width: 100%;
+    box-shadow: inset 0px 0px 100px rgba(0,0,0,0.5);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%), url('img/top.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+div.tagimg{
+    display: none;
+}
+div.tag{
+    padding-top: 25%;
+    padding-bottom: 4%;
+    width: 50%;
+    margin: 0 auto;
+}
+
+a.tag{
+    padding: 1px 2px;
+    border: 1px solid white;
+    border-radius: 6px;
+    color:floralwhite;
+    letter-spacing: 0.05em;
+    font-size: 80%;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+h2{
+    color:floralwhite;
+    letter-spacing: 0.05em;
+    font-size: 180%;
+    padding-top: 10px;
+    font-weight: 900;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+div.tag p{
+    padding-top: 10px;
+    color: white;
+    font-size: 80%;
+}
+
+/*the article area*/
+
+.rate1{
+    text-decoration: none;
+}
+article div.rate{
+    cursor:pointer;
+    width: 50%;
+    height: 1.5em;
+    margin: 2em auto;
+}
+
+.fa-commenting{
+/*    height: 2em;*/
+    top: 50%;
+    font-size: 1.2em;
+    position: relative;
+    float: left;
+}
+
+.fa-heart, .fa-share-alt{
+/*    height: 2em;*/
+    top: 50%;
+    padding-left: 6%;
+    font-size: 1.2em;
+    position: relative;
+    float: left;
+}
+
+div.rate{
+    color: #D2D2D2;
+    transition: color 0.2s linear;
+}
+
+div.rate:hover{
+    color: #F2583E;
+}
+
+
+article div.rate p{
+/*    height: 2em;*/
+    top: 50%;
+    padding-left: 2%;
+    font-family: 'lato',sans-serif;
+    position: relative;
+    float: left;
+    font-size: 1em;
+}
+
+/*the right*/
+article aside.author{
+    position: relative;
+    float: left;
+    width: 18%;
+    margin: 0 3%;
+    background: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+}
+
+.author img{
+    width: 60%;
+    height: auto;
+    padding: 10% 20%;
+}
+
+h4{
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 900;
+    margin: 2% auto;
+}
+
+.line{
+    margin: 5% auto;
+    width: 100%;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+.lineH{
+    position: relative;
+    height: 1em;
+    border-left: 1px solid #D2D2D2;
+    left: 50%;
+    right: 49%;
+}
+
+/*the two bottons*/
+.author a{
+    text-decoration: none;
+    color: #D2D2D2;
+    transition: color .2s linear;
+/*    border-left: 1px solid #D2D2D2;*/
+}
+
+.author a:hover{
+    color: #F2583E;
+}
+
+
+.author a p{
+    font-size: 0.8em;
+}
+.author a p, .author .fa-twitter{
+    position: relative;
+    float: left;
+    padding: 1% 2% 5% 7%;
+}
+
+.fa-file-text-o{
+    position: relative;
+    float: left;
+    padding: 1% 2% 5% 10%;
+}
+
+
+/*the article*/
+
+div.mobileAuthor{
+    overflow: hidden;
+    display: none;
+    width: 80%;
+    padding: 2% 0;
+    margin: 2% auto;
+    background: #EDEDED;
+}
+
+div.mobileAuthorImg{
+    display: block;
+    float: left;
+    width: 15%;
+    margin-left: 1.5%;
+}
+
+.mobileAuthorImg img{
+    width: 100%;
+    padding: 2%;
+    
+}
+
+.mobileAuthorImg p{
+    text-align: left;
+    font-weight: 900;
+    font-size: 1.2em;
+    padding: 6% 3% 3% 3%;
+}
+
+.mobileAuthor .Post{
+    width: 60%;
+    margin-left: 16.5%;
+    padding-left: 3%;
+    border-left: solid 1px grey;
+}
+
+div.Post h5{
+    font-weight: 800;
+    padding: 1% 0;
+}
+
+div.Post p{
+    font-family: "Georgia";
+    font-size: 0.8em;
+}
+
+.article{
+    position: relative;
+    width: 50%;
+    margin: 0 auto; 
+    padding-bottom: 1%;
+}
+
+.article p{
+    font-family: 'Georgia';
+    font-size: 1em;
+    line-height: 200%;
+}
+
+
+.article em#link{
+    cursor:pointer;
+    color: #F2583E;
+}
+
+.article em#link.linked{
+    background: #F2583E;
+    color: white;
+}
+
+span.callout{
+    font-size: 1.5em;
+    padding: 5%;
+    line-height: 150%;
+}
+
+span.callout p{
+    padding: 2%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-style: italic;
+    color: #4A4A4A;
+}
+
+
+/*the right*/
+.left{
+    width: 15%;
+    position: absolute;
+    left: 75%;
+    margin:0 2%;
+}
+
+.postGroup{
+/*    width: 20%;*/
+    padding: 0 10%;
+    border-left: 1px solid black;
+}
+
+.postGroup h5{
+    font-weight: 700;
+}
+
+.postGroup p{
+    line-height: 120%;
+    padding-top: 15%;
+    font-family: 'Georgia';
+    font-size: 0.8em;
+}
+
+/*ad*/
+
+.ad img{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5%;
+    transition: 0.2s linear all;
+}
+
+
+.ad a{
+    overflow: hidden;
+    width: 120%;
+    opacity: 1;
+    background: white;
+    color: black;
+    position: absolute;
+    top: 500%;
+    text-decoration: none;
+    transition: color opacity .2s linear;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, .3);
+    
+}
+
+.ad a:hover{
+    color: #F2583E;
+    opacity: 0.8;
+}
+
+.ad a:hover img{
+    transform: scale(1.05);
+}
+.ad h5{
+    padding: 2% 10%;
+    font-size: 0.8em;
+}
+
+.ad p{
+    padding: 0 10%;
+    font-size: 1em;
+}
+
+.ad a .fa-arrow-circle-right{
+    padding: 8% 10%;
+    font-size: 1.2em;
+    position: relative;
+    float: left;
+}
+
+.ad .adTag{
+    position: relative;
+    font-size: 0.8em;
+    display: block;
+    width: 100%;
+    background-color: #EDEDED;
+    float: left;
+    padding: 2%;
+}
+
+/*inside img*/
+
+
+.description{
+    background-image: url(img/inside.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100vw;
+    height: 433px;
+    margin-left: -61.111%;
+}
+
+
+.description a{ 
+    text-decoration: none;
+}
+
+.why{
+    position: relative;
+    float: left;
+    margin: 5%;
+    width: 22.5%;
+    background: white;
+    color:#4A4A4A;
+    box-shadow: 0px 0px 84px -18px rgba(0,0,0,0.75);
+    transition: box-shadow 0.2s linear;
+
+}
+
+.why:hover{
+/*    box-shadow: 0px 1px 4px rgba(0, 0, 0, .5);*/
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0);
+}
+
+.why h3{
+    padding: 8%;
+    font-size: 1.2em;
+    font-family: 'Georgia';
+    font-style: italic;
+    line-height: 150%;
+    
+}
+
+.why p{
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8em;
+    padding: 0% 8% 8% 8%;
+    color:#D2D2D2;
+}
+
+.why .fa-arrow-circle-right{
+    color:#D2D2D2;
+    font-size: 1.5em;
+    padding: 0% 8% 8% 8%;
+}
+
+
+/*the text links*/
+
+#textlinks{
+    overflow: hidden;
+    display: none;
+/*    display: block;*/
+    width: 100vw;
+    margin-top: 1em;
+    margin-left: -36.5vw;
+    padding: 10%;
+    box-shadow: inset 0px 0px 50px rgba(0,0,0,0.3);
+    transition: all linear .3s;
+    
+}
+
+.textlinksContent{
+    padding: 5%;
+    position: relative;
+    float: left;
+    width: 40%;
+    overflow: hidden;
+    
+}
+#textlinks a{
+    display: block;
+    text-decoration: none;
+    
+    
+}
+.fa-close{
+    cursor:pointer;
+    font-size: 1.5em;
+    float: right;
+    color: gray;
+    transition: all linear .3s;
+}
+
+.girlimg{
+    margin-left: 30vw;
+    display: block;
+    width: 20%;
+    height: 250px;
+    float: left;
+    background-image: url(img/girl.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#textlinks h5{
+    font-family: "Georgia";
+    font-size: 1.2em;
+    padding-bottom: 3%;
+    
+    
+}
+
+#textlinks p{
+    width: 80%;
+    font-family: 'Lato', sans-serif;
+    line-height: 120%;
+    font-size: 0.8em;
+    color: gray;
+    padding-bottom: 3%;
+    
+}
+
+#textlinks .fa-arrow-circle-right{
+    cursor:pointer;
+    color: gray;
+    font-size: 1.5em;
+    transition: all linear .3s;
+    
+}
+
+.fa-close:hover, #textlinks .fa-arrow-circle-right:hover{
+    color: #F2583E;
+}
+
+#textlinks:hover, .girlimg:hover{
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+/*the bottom rate*/
+.ratebottom .buttons{
+    cursor:pointer;
+    width: 50%;
+    height: 1.5em;
+    margin: 0em auto;
+    padding: 3% 0;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+article div.ratebottom .buttons p{
+/*    height: 2em;*/
+    top: 50%;
+    padding-left: 2%;
+    font-family: 'lato',sans-serif;
+    position: relative;
+    float: left;
+    font-size: 1em;
+}
+
+.buttons div{
+/*    text-decoration: none;*/
+    color: #9B9B9B;
+    transition: all .2s linear;
+}
+
+.comment.rateclicked, .heart.rateclicked{
+    color: #F2583E;
+}
+
+#comment{
+    display: none;
+    overflow: hidden;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%  0;
+    color: #9B9B9B;
+    -webkit-transition: 1s linear all;
+    -moz-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    transition: 1s linear all;
+}
+
+
+/*the comment tab*/
+.buttons div:hover{
+    color: #F2583E;
+}
+
+.ratebottom div#comment .reply{
+    padding: 3% 0;
+    overflow: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.ratebottom div#comment img{
+    position: relative;
+    float: left;
+    width: 15%;
+    padding: 4%;
+    
+}
+
+.ratebottom #comment h1{
+    width: 80%;
+    float: left;
+}
+
+.ratebottom div#comment .close{
+    font-size: 1.2em;
+    color: #9B9B9B;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    float: right;
+    -webkit-transition: 1s linear all;
+    -moz-transition: 1s linear all;
+    -o-transition: 1s linear all;
+    transition: 1s linear all;
+}
+
+.ratebottom div#comment .close :hover{
+    color: #F2583E;
+}
+
+.ratebottom div#comment .reply h3{
+    color: #F2583E;
+    font-weight: 100;
+    font-size: 1em;
+    position: relative;
+    float: left;
+    padding: 4% 2%;
+}
+
+.ratebottom div#comment .reply p{
+    width: 70%;
+    color: #9B9B9B;
+    font-size: 0.8em;
+    position: relative;
+    float: left;
+    padding: 0% 2%;
+    line-height: 120%;
+}
+
+/*hover for share*/
+
+span.popup{
+    font-size: 0.8em;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    width: 40%;
+    background: #F9F9F9;
+    color: #9B9B9B;
+    padding: 1%;
+    margin: 2% 4%;
+    top: 50%;
+    position: relative;
+    opacity: 0;
+    transition: all .5s linear;
+}
+
+span.popup i{
+    padding: 0 2%;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+
+span.popup a{
+    opacity: 0;
+}
+
+.ratebottom div.share:hover span.popup{
+    opacity: 1;
+}
+
+/*the bottom area*/
+
+.relatedArticle{
+    margin: -1px 0 0 -5vw;
+    float: left;
+    position: relative;
+    width: 100vw;
+    overflow: hidden;
+    background: #EDEDED;
+}
+
+.slider{
+    width: 80%;
+    height: 355px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.relatedArticle .allArticle .slide div{
+    overflow: hidden;
+    width: 30%;
+    height: 355px;
+    float: left;
+    margin: 1.666666%;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.relatedArticle .allArticle .slide div:hover{
+    box-shadow: none;
+    
+}
+
+
+.slide{
+    margin-left: -3vw;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+.slide div img{
+    display: none;
+}
+
+#slide1{
+    position:absolute;
+    opacity: 1;
+    z-index:1;
+}
+
+.other1{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.7) 100%), url('img/uber.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+
+.other2, .other9{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.7) 100%), url('img/other2.jpeg') no-repeat;
+    background-size: cover;
+    
+}
+
+.other3, .other7{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.7) 100%), url('img/other3.jpeg') no-repeat;
+    background-size: cover;
+    
+}
+
+.other4{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.7) 100%), url('img/other4.jpeg') no-repeat;
+    background-size: cover;
+    
+}
+
+.other5{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.7) 100%), url('img/other5.jpeg') no-repeat;
+    background-size: cover;
+    
+}
+
+.other6, .other8{
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.7) 100%), url('img/other6.jpg') no-repeat;
+    background-size: cover;
+    
+}
+
+.allArticle h3{
+    width: 20%;
+    color: dimgrey;
+    padding: 1% 0;
+    margin: 2% 7%;
+    font-size: 1em;
+    font-weight: 100;
+    border-bottom: 1px solid dimgrey;
+}
+
+.allArticle h5{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #F9F9F9;
+    padding:55% 5% 0 5%; 
+    line-height: 120%;
+    
+}
+
+.allArticle p{
+    font-size: 0.8em;
+    color: white;
+    padding: 5%;
+    line-height: 150%;
+}
+
+
+.allArticle span{
+    cursor:pointer;
+    display: block;
+    width: 80%;
+    margin: 2% 10% 5% 10%;
+    font-size: 1.5em;
+    color: #9B9B9B;
+    
+}
+
+
+#left{
+    float: left;
+    transition: all 0.2s linear;
+}
+
+#right{
+    float: right;
+    transition: all 0.2s linear;
+}
+
+#left:hover{
+    color: #F2583E;
+}
+
+#right:hover{
+    color: #F2583E;
+}
+
+
+
+
+.footer{
+    display: block;
+    width: 100%;
+    margin-top: 7%;
+}
+
+.footer p{
+    width: 20%;
+/*    height: 100px;*/
+    padding: 2% 40%;
+    margin: 0 auto;
+    color: gray;
+    font-size: 0.5em;
+    text-align: center;
+    background: #2B3E42;
+}
+
+/*ipad*/
+
+
+@media screen and (max-width:768px){
+    div.container{
+        width: 100%;
+        
+    }
+/*    the article area*/
+    div.tag, div.article {
+        width: 80%;
+    }
+    .author{
+        display: none;
+    }
+    .left{
+        display: none;
+    }
+    
+/*    two rate area*/
+    article div.rate, .ratebottom .buttons, #comment{
+        width: 80%;
+    }
+    
+    .description{
+        margin-left: -10vw;
+    }
+    
+    .why{
+        width: 50%;
+    }
+    
+    .relatedArticle{
+        margin-left: 0;
+    }
+    
+    #Topbar .home{
+        width: 15%;
+        margin: 3.7% auto;
+    }
+    
+    #Topbar.small .home{
+        width: 15%;
+        margin: 2.7% auto;
+
+    }
+    
+/*    the links*/
+    #textlinks{
+
+    margin-left: -26vw;
+
+    }
+    
+    .girlimg{
+        margin-left: 20vw;
+    }
+    
+    #textlinks p{
+        line-height: 150%;
+        padding-bottom: 10%;
+    }
+
+    
+    
+/*    the header*/
+    div.header{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.25) 59%, rgba(0, 0, 0, 0.65) 100%), url('img/top.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    
+/*    author*/
+    div.mobileAuthor{
+        display: block;
+    }
+    
+    
+/*    the related articles*/
+    .slide div img{
+        display: block;
+        height: 150px;
+}
+
+    #slide1{
+        position:absolute;
+        opacity: 1;
+        z-index:1;
+    }
+    
+    .slider{
+        height: 320px;
+    }
+    
+    .relatedArticle .allArticle .slide div{
+        box-shadow: none;
+        overflow: hidden;
+        border-bottom: solid 1px grey;
+        height: 300px;
+    }
+
+    .other1, .other2, .other3, .other4, .other5, .other6, .other7, .other8, .other9{
+        background: none;
+    }
+
+
+    .allArticle h3{
+        width: 20%;
+        color: dimgrey;
+        padding: 1% 0;
+        margin: 2% 7%;
+        font-size: 1em;
+        font-weight: 100;
+        border-bottom: 1px solid dimgrey;
+    }
+
+    .allArticle h5{
+        font-size: 1em;
+        font-weight: 800;
+        color: black;
+        padding:2% 5% 0 0; 
+        line-height: 120%;
+
+    }
+
+    .allArticle p{
+        font-size: 0.8em;
+        color: dimgrey;
+        padding: 5% 0;
+        line-height: 150%;
+    }
+}
+
+
+
+
+@media screen and (max-width:600px){
+    div.container{
+        width: 100%;
+    }
+    div.tag, div.article {
+        width: 90%;
+    }
+    
+    article div.rate, .ratebottom .buttons, #comment{
+        width: 90%;
+    }
+    
+    article div.rate{
+        margin-top: 1em;
+    }
+    
+    .description{
+        margin-left: -5vw;
+    }
+    
+/*    the top bar*/
+    div#Topbar{
+        height: 60px;
+    }
+    
+    #Topbar .prev .fa-arrow-circle-left{
+        line-height: 60px;
+    }
+    
+    #Topbar .next .fa-arrow-circle-right{
+        line-height: 60px;
+    }
+    
+    #Topbar .home{
+        width: 25%;
+        margin: 6.5% auto;
+    }
+    
+    #Topbar a.prev p{
+        display: none;
+    }
+    
+    #Topbar a.next p{
+        display: none;
+    }
+    
+/*   the topbar js effect */
+
+    div#Topbar.small{
+        box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.7);
+
+        height: 44px;
+
+    }
+
+    #Topbar.small .home{
+        width: 25%;
+        margin: 4% auto;
+
+    }
+
+    #Topbar.small a.prev p{
+        display: none;
+    }
+
+    #Topbar.small .prev .fa-arrow-circle-left{
+        line-height: 44px;
+        font-size: 1.5em;
+    }
+
+    #Topbar.small a.next p{
+        display: none;
+    }
+
+
+    #Topbar.small .next .fa-arrow-circle-right{
+        line-height: 44px;
+        font-size: 1.5em;
+
+
+    }
+    
+    
+/*    the header*/
+    div.tagimg{
+        display: block;
+        width: 100%;
+        height: 200px;
+        background-image: url(img/top.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    div.header{
+        background: none;
+        box-shadow: none;
+    }
+    
+    
+    a.tag{
+        border: none;
+        background: #2B3E42;
+        color: white;
+        border-radius: 1px;
+    }
+    
+    h2{
+        color: black;
+        font-size: 150%;
+        padding-top: 15px;
+    }
+    
+    div.tag{
+        padding-top: 5%;
+    }
+    
+    div.tag p{
+        
+        color: black;
+    }
+    
+/*    the article typo*/
+    .article p {
+    font-size: 1em;
+    line-height: 190%;
+}
+    
+    .why h3{
+        font-size: 1em;
+    }
+    
+    .why p{
+        font-size: 0.8em;
+        line-height: 150%;
+    }
+    
+    div.mobileAuthor{
+        width: 90%;
+    }
+    
+    
+    .mobileAuthorImg p{
+    text-align: left;
+    font-weight: 900;
+    font-size: 0.8em;
+    padding: 6% 3% 3% 3%;
+}
+    
+    
+    .mobileAuthor .Post{
+    width: 70%;
+    margin-left: 19%;
+    padding-left: 3%;
+    border-left: solid 1px grey;
+}
+    div.Post p{
+        display: none;
+    }
+    
+    div.Post h5{
+        padding: 2.5% 0;
+    }
+    
+    /*    the related articles*/
+    .slide div img{
+    display: block;
+    height: 60px;
+    float: left;
+}
+
+    #slide1{
+        position:absolute;
+        opacity: 1;
+        z-index:1;
+    }
+    
+    .slider{
+        height: 290px;
+    }
+    
+    .relatedArticle .allArticle .slide div{
+        box-shadow: none;
+        overflow: hidden;
+        padding-bottom: 2px;
+        width: 100%;
+        border-bottom: solid 1px grey;
+        height: 80px;
+    }
+
+
+    .allArticle h3{
+        width: 80%;
+        font-size: 0.8em;
+        padding-bottom: 3%;
+        padding-top: 3%;
+        border: none;
+    }
+
+    .allArticle h5{
+        font-size: 1em;
+        font-weight: 800;
+        float: left;
+        width: 60%;
+        color: black;
+        padding:2% 5% 0 5%; 
+        line-height: 120%;
+
+    }
+
+    .allArticle p{
+        display: none;
+    }
+    
+    .footer{
+        margin-top: 10%;
+    }
+    
+    /*    the links*/
+    #textlinks{
+
+    margin-left: -23vw;
+
+    }
+    
+    .girlimg{
+        margin-left: 17vw;
+    }
+    
+    #textlinks p{
+        display: none;
+    }
+    
+    .girlimg{
+    height: 150px;
+    }
+    
+    .textlinksContent{
+        widows: 60%;
+    }
+
+    #textlinks h5{
+        padding-bottom: 10%;
+
+
+    }
+    
+
+
+}
+
+
+
+
+
