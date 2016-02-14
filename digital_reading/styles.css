@@ -401,6 +401,20 @@ div.Post p{
     color: white;
 }
 
+
+.article em#link2{
+    cursor:pointer;
+    color: #F2583E;
+}
+
+.article em#link2.linked{
+    background: #F2583E;
+    color: white;
+}
+
+
+
+
 span.callout{
     font-size: 1.5em;
     padding: 5%;
@@ -562,7 +576,7 @@ span.callout p{
 
 /*the text links*/
 
-#textlinks{
+#textlinks, #textlinks2{
     overflow: hidden;
     display: none;
 /*    display: block;*/
@@ -570,20 +584,20 @@ span.callout p{
     margin-top: 1em;
     margin-left: -36.5vw;
     padding: 10%;
-    box-shadow: inset 0px 0px 50px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
     transition: all linear .3s;
     
 }
 
 .textlinksContent{
-    padding: 5%;
+    padding: 0 2%;
     position: relative;
     float: left;
-    width: 40%;
+    width: 35%;
     overflow: hidden;
     
 }
-#textlinks a{
+#textlinks a, #textlinks2 a{
     display: block;
     text-decoration: none;
     
@@ -598,7 +612,7 @@ span.callout p{
 }
 
 .girlimg{
-    margin-left: 30vw;
+    margin-left: 32vw;
     display: block;
     width: 20%;
     height: 250px;
@@ -608,7 +622,12 @@ span.callout p{
     background-position: center;
 }
 
-#textlinks h5{
+#img2{
+    background-image: url(img/link2.jpg);
+}
+
+#textlinks h5, #textlinks2 h5{
+    width: 65%;
     font-family: "Georgia";
     font-size: 1.2em;
     padding-bottom: 3%;
@@ -616,17 +635,17 @@ span.callout p{
     
 }
 
-#textlinks p{
-    width: 80%;
+#textlinks p, #textlinks2 p{
+    width: 65%;
     font-family: 'Lato', sans-serif;
-    line-height: 120%;
+    line-height: 160%;
     font-size: 0.8em;
     color: gray;
     padding-bottom: 3%;
     
 }
 
-#textlinks .fa-arrow-circle-right{
+#textlinks .fa-arrow-circle-right, #textlinks2 .fa-arrow-circle-right{
     cursor:pointer;
     color: gray;
     font-size: 1.5em;
@@ -634,11 +653,15 @@ span.callout p{
     
 }
 
-.fa-close:hover, #textlinks .fa-arrow-circle-right:hover{
+.fa-close:hover, #textlinks .fa-arrow-circle-right:hover, #textlinks2 .fa-arrow-circle-right:hover{
     color: #F2583E;
 }
 
 #textlinks:hover, .girlimg:hover{
+    opacity: 0.9;
+}
+
+#textlinks2:hover, .girlimg:hover{
     opacity: 0.9;
 }
 
@@ -953,6 +976,48 @@ span.popup a{
     text-align: center;
     background: #2B3E42;
 }
+
+/*big screen*/
+@media screen and (min-width:1441px){
+    div.container{
+        width: 70%;
+        
+    }
+    
+    .left {
+    width: 15%;
+    position: absolute;
+    left: 70%;
+    margin: 0 2%;
+    }
+    
+    .ad a {
+        width: 80%;
+    }
+    
+    .relatedArticle{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .description{
+        width: 200%;
+        margin-left: -50%;
+    }
+    
+    #Topbar .home{
+        margin: 1.2% auto;
+    }
+    
+    #Topbar.small .home{
+        margin: 0.7% auto;
+    }
+    
+    
+    
+}
+
+
 
 /*ipad*/
 
@@ -1308,7 +1373,7 @@ span.popup a{
     }
     
     /*    the links*/
-    #textlinks{
+    #textlinks, #textlinks2{
 
     margin-left: -23vw;
 
@@ -1318,7 +1383,7 @@ span.popup a{
         margin-left: 17vw;
     }
     
-    #textlinks p{
+    #textlinks p, #textlinks2 p{
         display: none;
     }
     
@@ -1327,11 +1392,13 @@ span.popup a{
     }
     
     .textlinksContent{
-        widows: 60%;
+        width: 50%;
     }
 
-    #textlinks h5{
+    #textlinks h5, #textlinks2 h5{
         padding-bottom: 10%;
+        width: 100%;
+        font-size: 1em;
 
 
     }

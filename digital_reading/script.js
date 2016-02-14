@@ -25,9 +25,25 @@ $(document).ready( function() {
 });
 
 $(document).ready( function() {
+    $( "#link2" ).click( function() {
+        $( "#textlinks2" ).toggle("fade",400);
+        
+    });
+});
+
+
+$(document).ready( function() {
     $( ".fa-close" ).click( function() {
         $( "#textlinks" ).css("display","none");
         $("#link").removeClass('linked');
+        
+    });
+});
+
+$(document).ready( function() {
+    $( ".fa-close" ).click( function() {
+        $( "#textlinks2" ).css("display","none");
+        $("#link2").removeClass('linked');
         
     });
 });
@@ -68,6 +84,14 @@ $(document).ready( function() {
     $(this).toggleClass('linked');
 });
 });
+
+$(document).ready( function() {
+    $('#link2').click(function(){
+    $(this).toggleClass('linked');
+});
+});
+
+
 
 //the slide show
 
