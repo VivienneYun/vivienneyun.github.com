@@ -979,20 +979,23 @@ span.popup a{
 
 /*big screen*/
 @media screen and (min-width:1441px){
+
+    
+    
     div.container{
-        width: 70%;
+        width: 1440px;
         
     }
     
     .left {
-    width: 15%;
+    width: 10%;
     position: absolute;
     left: 70%;
     margin: 0 2%;
     }
     
     .ad a {
-        width: 80%;
+        width: 100%;
     }
     
     .relatedArticle{
@@ -1006,12 +1009,15 @@ span.popup a{
     }
     
     #Topbar .home{
-        margin: 1.2% auto;
+        width: 150px;
+        margin: 25px auto;
     }
     
     #Topbar.small .home{
-        margin: 0.7% auto;
+        width: 100px;
+        margin: 20px auto;
     }
+
     
     
     
